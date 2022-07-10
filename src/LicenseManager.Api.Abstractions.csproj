@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Thomas ILLIET</Authors>
+    <Company>Netified</Company>
+    <PackageId>Netified.LicenseManager.Api.Abstractions</PackageId>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
+    <IsPackable>true</IsPackable>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Thomas ILLIET, Netified</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/netified</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/netified/license-manager-api-abstractions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+  
+</Project>
