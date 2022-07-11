@@ -4,8 +4,10 @@
     <Authors>Thomas ILLIET</Authors>
     <Company>Netified</Company>
     <PackageId>Netified.LicenseManager.Api.Abstractions</PackageId>
+    <Description>Interface definitions of License Manager's API</Description>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <IsPackable>true</IsPackable>
+    <PackageIcon>icon-512.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <Copyright>Thomas ILLIET, Netified</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -22,6 +24,14 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
       <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\icon-512.png">
+      <Pack>True</Pack>
+      <Visible>false</Visible>
+      <PackagePath></PackagePath>
     </None>
   </ItemGroup>
   
