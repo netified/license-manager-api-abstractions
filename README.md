@@ -1,10 +1,10 @@
 # Netified.LicenseManager.Api.Abstractions
 
-![GitHub](https://img.shields.io/github/license/netified/license-manager-api-abstractions?style=for-the-badge)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/netified?style=for-the-badge)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/netified/license-manager-api-abstractions/Continuous%20integration?style=for-the-badge)
-![Nuget](https://img.shields.io/nuget/dt/Netified.LicenseManager.Api.Abstractions?style=for-the-badge)
-![Nuget](https://img.shields.io/nuget/v/Netified.LicenseManager.Api.Abstractions?style=for-the-badge)
+[![GitHub](https://img.shields.io/github/license/netified/license-manager-api-abstractions?style=for-the-badge)](#)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/netified?style=for-the-badge)](#)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/netified/license-manager-api-abstractions/Continuous%20integration?style=for-the-badge)](#)
+[![Nuget](https://img.shields.io/nuget/dt/Netified.LicenseManager.Api.Abstractions?style=for-the-badge)](#)
+[![Nuget](https://img.shields.io/nuget/v/Netified.LicenseManager.Api.Abstractions?style=for-the-badge)](#)
 
 This package contains a complete set of type and API abstractions for the Licence Manager API.
 It provides no concrete implementations; rather, it acts as a general, library-agnostic standard definition of Licence Manager's API.
