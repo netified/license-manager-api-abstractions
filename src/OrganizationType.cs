@@ -20,7 +20,7 @@
 
 namespace LicenseManager.Api.Abstractions
 {
-    public enum OrganizationType
+    public enum OrganizationType : short
     {
         Personal = 1,
         Shared = 2,
