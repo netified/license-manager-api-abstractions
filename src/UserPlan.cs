@@ -23,6 +23,7 @@ namespace LicenseManager.Api.Abstractions
     public enum UserPlan
     {
         None = 0,
-        Prenium = 1,
+        Free = 1,
+        Prenium = 2,
     }
 }
