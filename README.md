@@ -9,7 +9,7 @@
 This package contains a complete set of type and API abstractions for the Licence Manager API.
 It provides no concrete implementations; rather, it acts as a general, library-agnostic standard definition of Licence Manager's API.
 
-These types serve as the foundation of Licence Manager's entire API surface, but can just as easily be used to implement your own Licence Manager library, independently of [Netified.LicenseManager.Api](https://github.com/netified/license-manager-api) *(the repository is reserved for sponsors)*.
+These types serve as the foundation of Licence Manager's entire API surface, but can just as easily be used to implement your own Licence Manager library, independently of [Netified.LicenseManager.Api](https://github.com/netified/license-manager-api).
 
 The primary goal of this project is to model Licence Manage's API as closely as possible, while at the same time applying appropriate C# practices
 
