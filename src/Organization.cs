@@ -29,5 +29,6 @@ namespace LicenseManager.Api.Abstractions
         public string Description { get; set; }
         public OrganizationType Type { get; set; }
         public int MemberCount { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
     }
 }
