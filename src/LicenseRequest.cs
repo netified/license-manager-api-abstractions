@@ -29,7 +29,6 @@ namespace LicenseManager.Api.Abstractions
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public string Company { get; set; }
         public string Type { get; set; }
         public int Duration { get; set; }
         public Dictionary<string, string> AdditionalAttributes { get; set; }
