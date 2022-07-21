@@ -25,6 +25,6 @@ namespace LicenseManager.Api.Abstractions
     public class OrganizationMemberRequest
     {
         public Guid UserId { get; set; }
-        public OrganizationRole Role { get; set; }
+        public OrganizationRoleType Role { get; set; }
     }
 }

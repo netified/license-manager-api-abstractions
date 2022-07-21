@@ -22,7 +22,7 @@ using System;
 
 namespace LicenseManager.Api.Abstractions
 {
-    public class Organization
+    public class OrganizationDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

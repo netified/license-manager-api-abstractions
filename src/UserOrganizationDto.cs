@@ -22,11 +22,11 @@ using System;
 
 namespace LicenseManager.Api.Abstractions
 {
-    public class UserOrganization
+    public class UserOrganizationDto
     {
         public Guid Id { get; set; }
-        public OrganizationRole Role { get; set; }
-        public User User { get; set; }
+        public OrganizationRoleType Role { get; set; }
+        public UserDto User { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
     }
 }

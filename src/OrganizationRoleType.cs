@@ -18,23 +18,15 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-using System;
-using System.Collections.Generic;
-
 namespace LicenseManager.Api.Abstractions
 {
     /// <summary>
-    /// License backup model.
+    /// The role of a user in an organization.
     /// </summary>
-    public class LicenseBackup
+    public enum OrganizationRoleType : short
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Company { get; set; }
-        public string Type { get; set; }
-        public DateTime ExpiresAt { get; set; }
-        public Dictionary<string, string> AdditionalAttributes { get; set; }
-
-        public Dictionary<string, string> ProductFeatures { get; set; }
+        Owner = 1,
+        Editor = 2,
+        Viewer = 3
     }
 }

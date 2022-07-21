@@ -18,12 +18,22 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+using System;
+
 namespace LicenseManager.Api.Abstractions
 {
-    public enum UserPlan
+    /// <summary>
+    /// User data transfer object
+    /// </summary>
+    public class UserDto
     {
-        None = 0,
-        Free = 1,
-        Prenium = 2,
+        public Guid Id { get; set; }
+        public string DisplayName { get; set; }
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        public UserPlanType Plan { get; set; }
+        public Guid DefaultOrganization { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? UpdatedUtc { get; set; }
     }
 }

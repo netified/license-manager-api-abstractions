@@ -23,17 +23,17 @@ using System;
 namespace LicenseManager.Api.Abstractions
 {
     /// <summary>
-    /// User data transfer object
+    /// Product data transfer object
     /// </summary>
-    public class User
+    public class ProductDto
     {
         public Guid Id { get; set; }
-        public string DisplayName { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
-        public UserPlan Plan { get; set; }
-        public Guid DefaultOrganization { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Company { get; set; }
+        public OrganizationDto Organization { get; set; }
+        public int LicenseCount { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
-        public DateTimeOffset? UpdatedUtc { get; set; }
+
     }
 }

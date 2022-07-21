@@ -19,21 +19,22 @@
 // IN THE SOFTWARE.
 
 using System;
+using System.Collections.Generic;
 
 namespace LicenseManager.Api.Abstractions
 {
     /// <summary>
-    /// Product data transfer object
+    /// License backup model.
     /// </summary>
-    public class Product
+    public class LicenseBackupDto
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
+        public string Email { get; set; }
         public string Company { get; set; }
-        public Organization Organization { get; set; }
-        public int LicenseCount { get; set; }
-        public DateTimeOffset CreatedUtc { get; set; }
+        public string Type { get; set; }
+        public DateTime ExpiresAt { get; set; }
+        public Dictionary<string, string> AdditionalAttributes { get; set; }
 
+        public Dictionary<string, string> ProductFeatures { get; set; }
     }
 }

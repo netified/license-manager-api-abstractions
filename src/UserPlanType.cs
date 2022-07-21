@@ -20,13 +20,10 @@
 
 namespace LicenseManager.Api.Abstractions
 {
-    /// <summary>
-    /// The role of a user in an organization.
-    /// </summary>
-    public enum OrganizationRole : short
+    public enum UserPlanType
     {
-        Owner = 1,
-        Editor = 2,
-        Viewer = 3
+        None = 0,
+        Free = 1,
+        Prenium = 2,
     }
 }

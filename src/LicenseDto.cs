@@ -23,7 +23,7 @@ using System.Collections.Generic;
 
 namespace LicenseManager.Api.Abstractions
 {
-    public class License
+    public class LicenseDto
     {
         public Guid Id { get; set; }
         public Guid ProductId { get; set; }
