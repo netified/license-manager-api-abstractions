@@ -28,7 +28,6 @@ namespace LicenseManager.Api.Abstractions
     public class ProductBackupDto
     {
         public Guid Id { get; set; }
-        public Guid OrganizationId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Company { get; set; }

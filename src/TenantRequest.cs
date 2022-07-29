@@ -20,13 +20,9 @@
 
 namespace LicenseManager.Api.Abstractions
 {
-    /// <summary>
-    /// The role of a user in an organization.
-    /// </summary>
-    public enum OrganizationRoleType : short
+    public class TenantRequest
     {
-        Owner = 1,
-        Editor = 2,
-        Viewer = 3
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

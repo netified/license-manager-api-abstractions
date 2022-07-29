@@ -18,11 +18,13 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+using System;
+
 namespace LicenseManager.Api.Abstractions
 {
-    public enum OrganizationType : short
+    public class TenantMemberRequest
     {
-        Personal = 1,
-        Shared = 2,
+        public Guid UserId { get; set; }
+        public TenantRoleType Role { get; set; }
     }
 }

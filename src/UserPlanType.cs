@@ -20,6 +20,9 @@
 
 namespace LicenseManager.Api.Abstractions
 {
+    /// <summary>
+    /// The license plan of the user.
+    /// </summary>
     public enum UserPlanType
     {
         None = 0,

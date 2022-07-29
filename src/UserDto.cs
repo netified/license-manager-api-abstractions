@@ -32,7 +32,7 @@ namespace LicenseManager.Api.Abstractions
         public string UserName { get; set; }
         public string Email { get; set; }
         public UserPlanType Plan { get; set; }
-        public Guid DefaultOrganization { get; set; }
+        public Guid DefaultTenant { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? UpdatedUtc { get; set; }
     }

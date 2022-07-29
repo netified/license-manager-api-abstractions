@@ -18,15 +18,14 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-using System;
-
 namespace LicenseManager.Api.Abstractions
 {
-    public class UserOrganizationDto
+    /// <summary>
+    /// The type of the tenant.
+    /// </summary>
+    public enum TenantType : short
     {
-        public Guid Id { get; set; }
-        public OrganizationRoleType Role { get; set; }
-        public UserDto User { get; set; }
-        public DateTimeOffset CreatedUtc { get; set; }
+        Personal = 1,
+        Shared = 2,
     }
 }

@@ -31,7 +31,7 @@ namespace LicenseManager.Api.Abstractions
         public string Name { get; set; }
         public string Description { get; set; }
         public string Company { get; set; }
-        public OrganizationDto Organization { get; set; }
+        public TenantDto Tenant { get; set; }
         public int LicenseCount { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
 

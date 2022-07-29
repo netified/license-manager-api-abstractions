@@ -18,11 +18,17 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+using System;
+
 namespace LicenseManager.Api.Abstractions
 {
-    public class OrganizationRequest
+    public class TenantDto
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public TenantType Type { get; set; }
+        public int MemberCount { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
     }
 }
