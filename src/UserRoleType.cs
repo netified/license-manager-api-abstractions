@@ -21,10 +21,11 @@
 namespace LicenseManager.Api.Abstractions
 {
     /// <summary>
-    /// The role of a user in an tenant.
+    /// The user's role level.
     /// </summary>
-    public enum TenantRoleType : short
+    public enum UserRoleType : short
     {
+        None = 0,
         Owner = 1,
         Editor = 2,
         Viewer = 3

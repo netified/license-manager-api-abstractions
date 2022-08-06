@@ -25,6 +25,6 @@ namespace LicenseManager.Api.Abstractions
     public class TenantMemberRequest
     {
         public Guid UserId { get; set; }
-        public TenantRoleType Role { get; set; }
+        public UserRoleType Role { get; set; }
     }
 }
