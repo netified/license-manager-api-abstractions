@@ -31,7 +31,8 @@ namespace LicenseManager.Api.Abstractions
         public string DisplayName { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
-        public UserPlanType Plan { get; set; }
+        public bool Prenium { get; set; }
+        public bool Private { get; set; }
         public Guid DefaultTenant { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? UpdatedUtc { get; set; }
