@@ -19,6 +19,8 @@
 // IN THE SOFTWARE.
 
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace LicenseManager.Api.Abstractions
 {
@@ -27,11 +29,27 @@ namespace LicenseManager.Api.Abstractions
     /// </summary>
     public class LicenseRequest
     {
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
+
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Email is required")]
         public string Email { get; set; }
+
+        [DefaultValue("Trial")]
+        [Required(ErrorMessage = "Type is required")]
         public string Type { get; set; }
+
+        [DefaultValue(1)]
+        [Required(ErrorMessage = "Duration is required")]
+        [Range(1, 1460, ErrorMessage = "Price must be between 1 and 1400")]
         public int Duration { get; set; }
+
+        [DefaultValue(null)]
         public Dictionary<string, string> AdditionalAttributes { get; set; }
+
+        [DefaultValue(null)]
         public Dictionary<string, string> ProductFeatures { get; set; }
     }
 }

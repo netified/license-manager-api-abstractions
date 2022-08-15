@@ -19,6 +19,8 @@
 // IN THE SOFTWARE.
 
 using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace LicenseManager.Api.Abstractions
 {
@@ -27,15 +29,35 @@ namespace LicenseManager.Api.Abstractions
     /// </summary>
     public class ProductBackupDto
     {
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Product identifier is required")]
         public Guid Id { get; set; }
+
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
+
+        [DefaultValue(null)]
         public string Description { get; set; }
+
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Company is required")]
         public string Company { get; set; }
+
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Pass phrase is required")]
         public string PassPhrase { get; set; }
 
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Private key is required")]
         public string PrivateKey { get; set; }
 
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Public key is required")]
         public string PublicKey { get; set; }
+
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "Checksum is required")]
         public string Checksum { get; set; }
     }
 }

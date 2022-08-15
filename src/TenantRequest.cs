@@ -18,11 +18,23 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
 namespace LicenseManager.Api.Abstractions
 {
     public class TenantRequest
     {
+        [DefaultValue(null)]
+        [MinLength(4)]
+        [MaxLength(64)]
+        [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
+
+        [DefaultValue(null)]
+        [MinLength(0)]
+        [MaxLength(128)]
+        [Required(ErrorMessage = "Description is required")]
         public string Description { get; set; }
     }
 }

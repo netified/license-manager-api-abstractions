@@ -19,12 +19,19 @@
 // IN THE SOFTWARE.
 
 using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace LicenseManager.Api.Abstractions
 {
     public class TenantMemberRequest
     {
+        [DefaultValue(null)]
+        [Required(ErrorMessage = "User identifier is required")]
         public Guid UserId { get; set; }
+
+        [DefaultValue(UserRoleType.None)]
+        [Required(ErrorMessage = "Role is required")]
         public UserRoleType Role { get; set; }
     }
 }
