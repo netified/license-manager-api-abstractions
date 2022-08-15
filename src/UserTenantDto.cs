@@ -22,9 +22,10 @@ using System;
 
 namespace LicenseManager.Api.Abstractions
 {
-    public class UserTenantDto
+    public class PermissionDto
     {
         public Guid Id { get; set; }
+        public string Type { get; set; }
         public UserRoleType Role { get; set; }
         public UserDto User { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
